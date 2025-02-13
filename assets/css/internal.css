@@ -1,0 +1,27 @@
+@import url(./reset.css);
+@import url(./global.css);
+@import url(./components/_navigator.css);
+
+.sWrapper{
+  display: flex;
+  height: 100vh;
+  flex-flow: row nowrap;
+}
+
+.sWrapper .sLeft-column{
+  width: 6.25rem;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sWrapper .sMain-content{
+  height: 100%;
+  width: 100%;
+  background-color: #808080;
+  padding-left: 1.875rem;
+}
+
+
