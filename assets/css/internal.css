@@ -1,6 +1,7 @@
 @import url(./reset.css);
 @import url(./global.css);
 @import url(./components/_navigator.css);
+@import url(./components/_pills.css);
 
 .sWrapper{
   display: flex;
@@ -11,17 +12,60 @@
 .sWrapper .sLeft-column{
   width: 6.25rem;
   height: 100%;
-  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  padding-right: 3.12rem;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .sWrapper .sMain-content{
   height: 100%;
   width: 100%;
   background-color: #808080;
-  padding-left: 1.875rem;
+  padding-left: 8.12rem;
 }
+
+.sWrapper .sMain-content__top{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sWrapper .sMain-content__bottom{
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.sWrapper .sMain-content .sLogo img{
+  margin: 3.12rem 0 1.87rem 0;
+}
+
+.sWrapper .sMain-content__top .sDescription{
+  background-color: rgba(0, 0, 0, .7);
+  max-width: 50%;
+  padding: 1.25rem;
+  border-radius: .625rem;
+}
+
+.sWrapper .sMain-content__top .sDescription .sDescription-text p{
+  color: #fff;
+  line-height: 170%;
+
+  strong{
+    font-weight: bold;
+  }
+}
+
+.sWrapper .sMain-content__top .sDescription .pills{
+  margin-bottom: 1.25rem;
+}
+
 
 
