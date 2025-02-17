@@ -2,6 +2,8 @@
 @import url(./global.css);
 @import url(./components/_navigator.css);
 @import url(./components/_pills.css);
+@import url(./components/_linkButton.css);
+@import url(./components/_gallery.css);
 
 .sWrapper{
   display: flex;
@@ -61,6 +63,20 @@
   strong{
     font-weight: bold;
   }
+}
+
+.sWrapper .sMain-content__top .s-description .pills{
+  margin-bottom: 1.25rem;
+}
+
+.sWrapper .sMain-content .s-links{
+  padding: 1.25rem;
+  padding-left: 0;
+}
+
+.sWrapper .sMain-content .s-links ul{
+  display: flex;
+  flex-direction: row;
 }
 
 .sWrapper .sMain-content__top .sDescription .pills{
