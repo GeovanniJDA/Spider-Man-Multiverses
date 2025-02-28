@@ -11,6 +11,11 @@
   flex-flow: row nowrap;
 }
 
+.sWrapper video{
+  position: fixed;
+  width: 100%;
+}
+
 .sWrapper .sLeft-column{
   width: 6.25rem;
   height: 100%;
@@ -27,8 +32,8 @@
 .sWrapper .sMain-content{
   height: 100%;
   width: 100%;
-  background-color: #808080;
   padding-left: 8.12rem;
+  position: relative;
 }
 
 .sWrapper .sMain-content__top{
@@ -81,6 +86,21 @@
 
 .sWrapper .sMain-content__top .sDescription .pills{
   margin-bottom: 1.25rem;
+}
+
+.s-spiderman-01{
+  background-image: url('../images/spiderman-tobey/movie-01/background.png');
+  background-size: cover;
+}
+
+.s-spiderman-02{
+  background-image: url('../images/spiderman-tobey/movie-02/background.png');
+  background-size: cover;
+}
+
+.s-spiderman-03{
+  background-image: url('../images/spiderman-tobey/movie-03/background.png');
+  background-size: cover;
 }
 
 
