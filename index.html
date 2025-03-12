@@ -25,31 +25,39 @@
         <a href="#">Andrew Garfield</a>
       </li>
     </ul>
-  </nav>
+  </nav> 
 
   <div class="sContainer">
-    <a href="#" class="sCard" id="spiderMan-01">
-      <img class="sCard-background" src="./assets/images/pic-sm-bg-01.jpg">
-      <img class="sCard-image" src="./assets/images/spider-man-01.png" alt="Tobey Maguire">
-      <h2 class="sCard-title">Tobey Maguire</h2>
-    </a>
-    <a href="#" class="sCard" id="spiderMan-02">
-      <img class="sCard-background" src="./assets/images/pic-sm-bg-02.jpg">
-      <img class="sCard-image" src="./assets/images/spider-man-02.png" alt="Tom Holland">
-      <h2 class="sCard-title">Tom Holland</h2>
-    </a>
-    <a href="#" class="sCard" id="spiderMan-03">
-      <img class="sCard-background" src="./assets/images/pic-sm-bg-03.jpg">
-      <img class="sCard-image" src="./assets/images/spider-man-03.png" alt="Andre Garfield">
-      <h2 class="sCard-title">Andrew Garfield</h2>
-    </a>
+    <div class="sCards-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+      <a href="#" class="sCard" id="spiderMan-01">
+        <img class="sCard-background" src="./assets/images/pic-sm-bg-01.jpg">
+        <img class="sCard-image" src="./assets/images/spider-man-01.png" alt="Tobey Maguire">
+        <h2 class="sCard-title">Tobey Maguire</h2>
+      </a>
+      <a href="#" class="sCard" id="spiderMan-02">
+        <img class="sCard-background" src="./assets/images/pic-sm-bg-02.jpg">
+        <img class="sCard-image" src="./assets/images/spider-man-02.png" alt="Tom Holland">
+        <h2 class="sCard-title">Tom Holland</h2>
+      </a>
+      <a href="#" class="sCard" id="spiderMan-03">
+        <img class="sCard-background" src="./assets/images/pic-sm-bg-03.jpg">
+        <img class="sCard-image" src="./assets/images/spider-man-03.png" alt="Andre Garfield">
+        <h2 class="sCard-title">Andrew Garfield</h2>
+      </a>
+    </div>
   </div>
   <div class="sController">
-    <div class="sController-button">01</div>
-    <div class="sController-button">02</div>
-    <div class="sController-button">03</div>
+    <div id="1" onclick="selectCarouselItem(this)" class="sController-button sController-button--active">
+      01
+    </div>
+    <div id="2" onclick="selectCarouselItem(this)" class="sController-button">
+      02
+    </div>
+    <div id="3" onclick="selectCarouselItem(this)" class="sController-button">
+      03
+    </div>
     <div class="sController-line"></div>
   </div>
-<script src="./assets/scripts/cardHoverAnimation.js"></script>
+<script src="./assets/scripts/script.js"></script>
 </body>
 </html>
